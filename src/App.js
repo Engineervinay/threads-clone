@@ -7,6 +7,7 @@ import './App.css';
 
 function App() {
   const[user,setUser]=useState(null)
+  const[threads,setThreads]=useState(null)
   const userId="e626d981-4318-4188-a640-09dbd13e3241";
   const getUser=async()=>{
     try{
@@ -17,18 +18,28 @@ function App() {
       console.error(error)
     }
   }
-
+  const getThreads=async()=>{
+    try{
+      const response=await fetch(`http://localhost:3000/threads?thread_from=${userId}`)
+      const data=await response.json()
+      setThreads(data)
+    }catch(error){
+      console.error(error)
+    }
+  }
   useEffect(()=>{
     getUser()
+    getThreads()
   },[])
-  console.log(user)
+  console.log(threads)
   return (
-    <div className="App">
-      <Nav />
-      <Header/>
-      <Feed/> 
+   <> {user &&<div className="App">
+      <Nav url={user.instagram_url}/>
+      <Header user={user}/>
+      {threads && <Feed threads={threads}/>} 
      {/* <PopUp/>*/}
-    </div>
+    </div>}
+    </>
   );
 }
 

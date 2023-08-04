@@ -1,9 +1,15 @@
 import Thread from './Thread'
-function Feed() {
+function Feed({threads}) {
   return (
     <div className="feed">
-      <Thread/>
+     {threads.map((thread)=>{
+      
+     <Thread thread={thread}/>
     
+     })
+
+     }
+      
     </div>
   );
 }
