@@ -1,11 +1,11 @@
 import Thread from './Thread'
-function Feed({threads}) {
+function Feed({threads,user}) {
   return (
     <div className="feed">
      {threads.map((thread)=>{
-      
-     <Thread thread={thread}/>
-    
+      return (
+     <Thread thread={thread} user={user}/>
+      )
      })
 
      }

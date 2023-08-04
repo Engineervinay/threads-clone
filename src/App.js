@@ -36,7 +36,7 @@ function App() {
    <> {user &&<div className="App">
       <Nav url={user.instagram_url}/>
       <Header user={user}/>
-      {threads && <Feed threads={threads}/>} 
+      {threads && <Feed threads={threads} user={user}/>} 
      {/* <PopUp/>*/}
     </div>}
     </>
