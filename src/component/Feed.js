@@ -1,7 +1,8 @@
-
+import Thread from './Thread'
 function Feed() {
   return (
-    <div className="App">
+    <div className="feed">
+      <Thread/>
     </div>
   );
 }
