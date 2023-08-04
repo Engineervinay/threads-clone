@@ -104,12 +104,52 @@
       
       {
         "id":2,
-        "timestamp":"Fri Aug 11 2023 15:54:10 GMT+0530 (India Standard Time)",
+        "timestamp":"Fri Aug 04 2023 17:54:10 GMT+0530 (India Standard Time)",
         "thread_from":"e626d981-4318-4188-a640-09dbd13e3241",
         "thread_to":null,
         "reply_to":null,
         "text": "this is my another thread checkout my comments",
         "likes":[]
+      },
+      
+      {
+        "id":3,
+        "timestamp":"Fri Aug 04 2023 10:54:10 GMT+0530 (India Standard Time)",
+        "thread_from":"d959c54e-2ab7-4e60-9158-210fd81a1381",
+        "thread_to":null,
+        "reply_to":null,
+        "text": "If you dont like what being said change the conversation.",
+        "likes":[
+          {
+            "uuid":"9496b51f-7e4f-48a4-8103-c4a662c1e54a"
+          },
+          {
+            "uuid":"e626d981-4318-4188-a640-09dbd13e3241"
+          },
+          {
+            "uuid":"d959c54e-2ab7-4e60-9158-210fd81a1381"
+          }
+        ]
+      },
+      
+      {
+        "id":4,
+        "timestamp":"Fri Aug 04 2023 17:54:10 GMT+0530 (India Standard Time)",
+        "thread_from":"9496b51f-7e4f-48a4-8103-c4a662c1e54a",
+        "thread_to":"d959c54e-2ab7-4e60-9158-210fd81a1381",
+        "reply_to":3,
+        "text": "Say Nothing, You Understand?",
+        "likes":[
+          {
+            "uuid":"9496b51f-7e4f-48a4-8103-c4a662c1e54a"
+          },
+          {
+            "uuid":"e626d981-4318-4188-a640-09dbd13e3241"
+          },
+          {
+            "uuid":"d959c54e-2ab7-4e60-9158-210fd81a1381"
+          }
+        ]
       }
       
     ]
