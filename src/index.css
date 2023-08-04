@@ -81,3 +81,32 @@ button.primary{
 .button-container button.current{
     border-bottom:rgb(250,250,250)solid 2px;
 }
+.feed-card .icons svg{
+    height:20px;
+    padding:0 5px;
+}
+.feed-card{
+    border-bottom: rgb(114,114,114)solid 1px;
+    padding:10px 0;
+
+
+}
+.feed-card .text-container{
+    display:flex;
+    justify-content: space-between;
+}
+.feed-card .img-container{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.feed-card .img-container img{
+    height: 110%;
+}
+.feed{
+    height:400px;
+
+   overflow-x: scroll;
+    /* imp: overflow x to create scrolling feed*/
+}

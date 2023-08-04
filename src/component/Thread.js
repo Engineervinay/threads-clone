@@ -13,7 +13,7 @@ function Thread() {
             </div>
 
           </div>
-          <p>time</p>
+          <p className="sub-text">time</p>
 
         </div>
         <div className="icons">
@@ -22,7 +22,7 @@ function Thread() {
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 11v4h2.953l1.594 2h-6.547v-6h-2l3-4 3 4h-2zm6 2v-4h-2.922l-1.594-2h6.516v6h2l-3 4-3-4h2z"/></svg>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 12l11 3.1 7-8.1-8.156 5.672-4.312-1.202 15.362-7.68-3.974 14.57-3.75-3.339-2.17 2.925v-.769l-2-.56v7.383l4.473-6.031 4.527 4.031 6-22z"/></svg>
         </div>
-        <p><span>x replies •</span><span> x likes </span></p>
+        <p className="sub-text"><span>x replies •</span><span> x likes </span></p>
     </article>
   )
 }
