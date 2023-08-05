@@ -1,6 +1,8 @@
 import React from 'react'
 
-function Header({user}) {
+function Header({user,viewThreadsFeed,setViewThreadsFeed}) {
+
+  
   return (
     <header>
       <div className='info-container'>
@@ -20,8 +22,8 @@ function Header({user}) {
         </div>
       <button className='primary' onClick={()=>navigator.clipboard.writeText('profile url')}>Share Profile</button>
       <div className='button-container'>
-        <button className='current'>Threads</button>
-        <button>Replies</button>
+        <button className={viewThreadsFeed? 'current': null} onClick={()=>setViewThreadsFeed(true)}>Threads</button>
+        <button className={!viewThreadsFeed? 'current': null}onClick={()=>setViewThreadsFeed(false)}>Replies</button>
 
       </div>
     </header>

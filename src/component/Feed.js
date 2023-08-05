@@ -4,7 +4,7 @@ function Feed({threads,user}) {
     <div className="feed">
      {threads.map((thread)=>{
       return (
-     <Thread thread={thread} user={user}/>
+     <Thread key={thread.id} thread={thread} user={user}/>
       )
      })
 
