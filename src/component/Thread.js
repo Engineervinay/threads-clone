@@ -1,5 +1,7 @@
+import moment from 'moment'
 
 function Thread({thread,user}) {
+  const timePassed=moment().startOf('day').fromNow(thread.timestamp)
 
   return (
     <article className='feed-card'>
@@ -14,7 +16,7 @@ function Thread({thread,user}) {
             </div>
 
           </div>
-          <p className="sub-text">time</p>
+          <p className="sub-text">{timePassed}</p>
 
         </div>
         <div className="icons">
