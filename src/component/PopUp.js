@@ -1,6 +1,6 @@
 import PopUpThread from './PopUpThread'
 import ThreadInput from './ThreadInput'
-function PopUp({openPopup,setOpenPopup}) {
+function PopUp({setOpenPopup}) {
   
   return (
     <div className="popup">

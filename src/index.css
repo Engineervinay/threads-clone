@@ -150,3 +150,13 @@ input:focus{
    
     
 }
+.close-popup{
+    cursor:pointer;
+    width:14px;
+    height: 15px;
+    padding:10px;
+    margin:auto;
+    margin-right:10px;
+    border: rgb(114,114,114) solid 1px;
+    border-radius: 50%;
+}
