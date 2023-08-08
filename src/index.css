@@ -107,7 +107,7 @@ button.primary{
 .feed{
     height:400px;
 
-   overflow: auto;
+   overflow-y: scroll;
     /* imp: overflow x to create scrolling feed*/
 }
 input{
@@ -132,10 +132,21 @@ input:focus{
     width:380px;
     background-color: rgb(38,38,38);
     padding: 20px;
-    overflow-y:scroll;
+    /*overflow-y:scroll;*/
     box-shadow: rgb(0,0,0,0.25) 0 54px 55px,
     rgb(0,0,0,0.25) 0 -12px 30px,
     rgb(0,0,0,0.25) 0 4px 4px,
     rgb(0,0,0,0.25) 0 12px 13px,
     rgb(0,0,0,0.25) 0 -3px 5px;
+}
+
+.write-icon{
+    fill:rgb(250,250,250);
+    cursor: pointer;
+    height:40px;
+    margin-left:45%;
+    margin-top:10px;
+    
+   
+    
 }

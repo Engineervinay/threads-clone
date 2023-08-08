@@ -4,13 +4,13 @@ import Header from './component/Header'
 import Feed from './component/Feed'
 import PopUp from './component/PopUp'
 import './App.css';
-
+import WriteIcon from './component/WriteIcon'
 function App() {
   const[user,setUser]=useState(null)
   const[threads,setThreads]=useState(null)
   const[viewThreadsFeed,setViewThreadsFeed]=useState(true)
   const[filteredThreads,setFilteredThreads]=useState(null)
-  
+  const[openPopup,setOpenPopup]=useState(false)
   const userId="e626d981-4318-4188-a640-09dbd13e3241";
   const getUser=async()=>{
     try{
@@ -45,6 +45,7 @@ function App() {
     getThreads()
     
   },[])
+  
   useEffect(()=>{
     getThreadsFeed()
   },[user,threads,viewThreadsFeed])
@@ -55,7 +56,10 @@ function App() {
       <Nav url={user.instagram_url}/>
       <Header user={user} viewThreadsFeed={viewThreadsFeed} setViewThreadsFeed={setViewThreadsFeed}/>
       {filteredThreads && <Feed threads={filteredThreads} user={user}/>} 
-     {/* <PopUp/>*/}
+      {openPopup &&<PopUp openPopup={openPopup}setOpenPopup={setOpenPopup}/>}
+     <div onClick={()=>setOpenPopup(true)}>
+          <WriteIcon/>
+     </div>
     </div>}
     </>
   );

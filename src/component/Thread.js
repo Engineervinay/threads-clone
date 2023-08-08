@@ -16,7 +16,7 @@ function Thread({thread,user}) {
             </div>
 
           </div>
-          <p className="sub-text">{timePassed}</p>
+          <p className="sub-text">{timePassed} ago</p>
 
         </div>
         <div className="icons">
