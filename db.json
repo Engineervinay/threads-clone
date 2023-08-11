@@ -1,167 +1,165 @@
 {
-    "users": [
-      { 
-        "id":0,
-        "user_uuid": "e626d981-4318-4188-a640-09dbd13e3241",
-        "username": "vinay patil",
-        "handle": "engineervinay", 
-        "bio": "Computer Engineer | Programmer" ,
-        "link": "https://vinaypatil.netlify.app",
-        "img": "https://i.imgur.com/eePjFpB.jpg",
-        "instagram_url":"https://www.instagram.com/v.inay.patil",
-          "followers":[
-            {
-              "user_uuid":"d959c54e-2ab7-4e60-9158-210fd81a1381"
-              
-            },
-            {
-              "user_uuid":"9496b51f-7e4f-48a4-8103-c4a662c1e54a"
-              
-            },
-            {
-              "user_uuid":"779b88db-9f34-498b-ab78-354c015df6b4 "
-              
-            },
-            {
-              "user_uuid":" bcb2f18b-1d24-4b42-9a6f-37f2f17a573d"
-              
-            }
-            
-          ]
+  "users": [
+    {
+      "id": 0,
+      "user_uuid": "e626d981-4318-4188-a640-09dbd13e3241",
+      "username": "vinay patil",
+      "handle": "engineervinay",
+      "bio": "Computer Engineer | Programmer",
+      "link": "https://vinaypatil.netlify.app",
+      "img": "https://i.imgur.com/eePjFpB.jpg",
+      "instagram_url": "https://www.instagram.com/v.inay.patil",
+      "followers": [
+        {
+          "user_uuid": "d959c54e-2ab7-4e60-9158-210fd81a1381"
         },
-        { 
-          "id":1,
-          "user_uuid": "d959c54e-2ab7-4e60-9158-210fd81a1381",
-          "username": "Don Draper",
-          "handle": "Don Draper", 
-          "bio": "Make it simple but significant" ,
-          "link": "#",
-          "img": "https://i.imgur.com/f6GlEB8.jpg",
-          "instagram_url":"https://www.instagram.com/dondraper",
-            "followers":[
-              {
-                "user_uuid":"e626d981-4318-4188-a640-09dbd13e3241"
-                
-              },
-              {
-                "user_uuid":"9496b51f-7e4f-48a4-8103-c4a662c1e54a"
-              }
-              
-            ]
-          },
-          { 
-            "id":2,
-            "user_uuid": "9496b51f-7e4f-48a4-8103-c4a662c1e54a",
-            "username": "Saul Goodman",
-            "handle": "jimmymcgal", 
-            "bio": "Lawyer | I know a guy who knows a guy " ,
-            "link": "vinaypatil.netlify.app/",
-            "img": "https://i.imgur.com/iX38GjG.png",
-            "instagram_url":"https://www.instagram.com/v.inay.patil",
-              "followers":[
-                {
-                  "user_uuid":" d959c54e-2ab7-4e60-9158-210fd81a1381"
-                  
-                },
-                {
-                  "user_uuid":" e626d981-4318-4188-a640-09dbd13e3241"
-                  
-                },
-                {
-                  "user_uuid":"779b88db-9f34-498b-ab78-354c015df6b4 "
-                  
-                }
-                
-              ]
-            }
-    ],
-    "threads":[
-      {
-        "id":0,
-        "timestamp":"Fri Aug 04 2023 14:54:10 GMT+0530 (India Standard Time)",
-        "thread_from":"e626d981-4318-4188-a640-09dbd13e3241",
-        "thread_to":null,
-        "reply_to":null,
-        "text": "hello world!",
-        "likes":[
-            {
-              "uuid":"9496b51f-7e4f-48a4-8103-c4a662c1e54a"
-            },
-            {
-              "uuid":"779b88db-9f34-498b-ab78-354c015df6b4"
-            }
-        ]
-      },
-      {
-        "id":1,
-        "timestamp":"Fri Aug 04 2023 15:54:10 GMT+0530 (India Standard Time)",
-        "thread_from":"e626d981-4318-4188-a640-09dbd13e3241",
-        "thread_to":null,
-        "reply_to":null,
-        "text": "this is new thread",
-        "likes":[]
-      },
-      
-      {
-        "id":2,
-        "timestamp":"Fri Aug 04 2023 17:54:10 GMT+0530 (India Standard Time)",
-        "thread_from":"e626d981-4318-4188-a640-09dbd13e3241",
-        "thread_to":null,
-        "reply_to":null,
-        "text": "this is my another thread checkout my comments",
-        "likes":[]
-      },
-      
-      {
-        "id":3,
-        "timestamp":"Fri Aug 04 2023 10:54:10 GMT+0530 (India Standard Time)",
-        "thread_from":"d959c54e-2ab7-4e60-9158-210fd81a1381",
-        "thread_to":null,
-        "reply_to":null,
-        "text": "If you dont like what being said change the conversation.",
-        "likes":[
-          {
-            "uuid":"9496b51f-7e4f-48a4-8103-c4a662c1e54a"
-          },
-          {
-            "uuid":"e626d981-4318-4188-a640-09dbd13e3241"
-          },
-          {
-            "uuid":"d959c54e-2ab7-4e60-9158-210fd81a1381"
-          }
-        ]
-      },
-      
-      {
-        "id":4,
-        "timestamp":"Fri Aug 04 2023 17:54:10 GMT+0530 (India Standard Time)",
-        "thread_from":"9496b51f-7e4f-48a4-8103-c4a662c1e54a",
-        "thread_to":"d959c54e-2ab7-4e60-9158-210fd81a1381",
-        "reply_to":3,
-        "text": "Say Nothing, You Understand?",
-        "likes":[
-          {
-            "uuid":"9496b51f-7e4f-48a4-8103-c4a662c1e54a"
-          },
-          {
-            "uuid":"e626d981-4318-4188-a640-09dbd13e3241"
-          },
-          {
-            "uuid":"d959c54e-2ab7-4e60-9158-210fd81a1381"
-          }
-        ]
-      },
-      {
-        "id":5,
-        "timestamp":"Sat Aug 05 2023 11:25:10 GMT+0530 (India Standard Time)",
-        "thread_from":"e626d981-4318-4188-a640-09dbd13e3241",
-        "thread_to":"d959c54e-2ab7-4e60-9158-210fd81a1381",
-        "reply_to":3,
-        "text": "this is test reply",
-        "likes":[]
-      }
-      
-    ]
-
-    
-  }
+        {
+          "user_uuid": "9496b51f-7e4f-48a4-8103-c4a662c1e54a"
+        },
+        {
+          "user_uuid": "779b88db-9f34-498b-ab78-354c015df6b4 "
+        },
+        {
+          "user_uuid": " bcb2f18b-1d24-4b42-9a6f-37f2f17a573d"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "user_uuid": "d959c54e-2ab7-4e60-9158-210fd81a1381",
+      "username": "Don Draper",
+      "handle": "Don Draper",
+      "bio": "Make it simple but significant",
+      "link": "#",
+      "img": "https://i.imgur.com/f6GlEB8.jpg",
+      "instagram_url": "https://www.instagram.com/dondraper",
+      "followers": [
+        {
+          "user_uuid": "e626d981-4318-4188-a640-09dbd13e3241"
+        },
+        {
+          "user_uuid": "9496b51f-7e4f-48a4-8103-c4a662c1e54a"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "user_uuid": "9496b51f-7e4f-48a4-8103-c4a662c1e54a",
+      "username": "Saul Goodman",
+      "handle": "jimmymcgal",
+      "bio": "Lawyer | I know a guy who knows a guy ",
+      "link": "vinaypatil.netlify.app/",
+      "img": "https://i.imgur.com/iX38GjG.png",
+      "instagram_url": "https://www.instagram.com/v.inay.patil",
+      "followers": [
+        {
+          "user_uuid": " d959c54e-2ab7-4e60-9158-210fd81a1381"
+        },
+        {
+          "user_uuid": " e626d981-4318-4188-a640-09dbd13e3241"
+        },
+        {
+          "user_uuid": "779b88db-9f34-498b-ab78-354c015df6b4 "
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "id": 0,
+      "timestamp": "Fri Aug 04 2023 14:54:10 GMT+0530 (India Standard Time)",
+      "thread_from": "e626d981-4318-4188-a640-09dbd13e3241",
+      "thread_to": null,
+      "reply_to": null,
+      "text": "hello world!",
+      "likes": [
+        {
+          "user_uuid": "9496b51f-7e4f-48a4-8103-c4a662c1e54a"
+        },
+        {
+          "user_uuid": "779b88db-9f34-498b-ab78-354c015df6b4"
+        },
+        {
+          "user_uuid": "e626d981-4318-4188-a640-09dbd13e3241"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "timestamp": "Fri Aug 04 2023 15:54:10 GMT+0530 (India Standard Time)",
+      "thread_from": "e626d981-4318-4188-a640-09dbd13e3241",
+      "thread_to": null,
+      "reply_to": null,
+      "text": "this is new thread",
+      "likes": [
+        {
+          "user_uuid": "e626d981-4318-4188-a640-09dbd13e3241"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "timestamp": "Fri Aug 04 2023 17:54:10 GMT+0530 (India Standard Time)",
+      "thread_from": "e626d981-4318-4188-a640-09dbd13e3241",
+      "thread_to": null,
+      "reply_to": null,
+      "text": "this is my another thread checkout my comments",
+      "likes": [
+        {
+          "user_uuid": "e626d981-4318-4188-a640-09dbd13e3241"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "timestamp": "Fri Aug 04 2023 10:54:10 GMT+0530 (India Standard Time)",
+      "thread_from": "d959c54e-2ab7-4e60-9158-210fd81a1381",
+      "thread_to": null,
+      "reply_to": null,
+      "text": "If you dont like what being said change the conversation.",
+      "likes": [
+        {
+          "user_uuid": "9496b51f-7e4f-48a4-8103-c4a662c1e54a"
+        },
+        {
+          "user_uuid": "e626d981-4318-4188-a640-09dbd13e3241"
+        },
+        {
+          "user_uuid": "d959c54e-2ab7-4e60-9158-210fd81a1381"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "timestamp": "Fri Aug 04 2023 17:54:10 GMT+0530 (India Standard Time)",
+      "thread_from": "9496b51f-7e4f-48a4-8103-c4a662c1e54a",
+      "thread_to": "d959c54e-2ab7-4e60-9158-210fd81a1381",
+      "reply_to": 3,
+      "text": "Say Nothing, You Understand?",
+      "likes": [
+        {
+          "user_uuid": "9496b51f-7e4f-48a4-8103-c4a662c1e54a"
+        },
+        {
+          "user_uuid": "e626d981-4318-4188-a640-09dbd13e3241"
+        },
+        {
+          "user_uuid": "d959c54e-2ab7-4e60-9158-210fd81a1381"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "timestamp": "Sat Aug 05 2023 11:25:10 GMT+0530 (India Standard Time)",
+      "thread_from": "e626d981-4318-4188-a640-09dbd13e3241",
+      "thread_to": "d959c54e-2ab7-4e60-9158-210fd81a1381",
+      "reply_to": 3,
+      "text": "this is test reply",
+      "likes": [
+        {
+          "user_uuid": "e626d981-4318-4188-a640-09dbd13e3241"
+        }
+      ]
+    }
+  ]
+}

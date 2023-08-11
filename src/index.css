@@ -17,6 +17,7 @@ body{
     background-color:rgb(38,38,38);
     padding: 20px;
 }
+
 svg{
     fill:white;
 }
@@ -145,10 +146,7 @@ input:focus{
     cursor: pointer;
     height:40px;
     margin-left:45%;
-    margin-top:10px;
-    
-   
-    
+    margin-top:10px; 
 }
 .close-popup{
     cursor:pointer;

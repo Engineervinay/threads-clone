@@ -1,10 +1,10 @@
 import Thread from './Thread'
-function Feed({threads,user,setOpenPopup}) {
+function Feed({threads,user,setOpenPopup,getThreads}) {
   return (
     <div className="feed">
      {threads.map((thread)=>{
       return (
-     <Thread key={thread.id} setOpenPopup={setOpenPopup} thread={thread} user={user}/>
+     <Thread key={thread.id} getThreads={getThreads}setOpenPopup={setOpenPopup} thread={thread} user={user}/>
       )
      })
 
