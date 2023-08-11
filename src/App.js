@@ -71,7 +71,7 @@ function App() {
       <Nav url={user.instagram_url}/>
       <Header user={user} viewThreadsFeed={viewThreadsFeed} setViewThreadsFeed={setViewThreadsFeed}/>
       {filteredThreads && <Feed setselectedReplyThread={setSelectedReplyThread} threads={filteredThreads} setOpenPopup={setOpenPopup} getThreads={getThreads}user={user}/>} 
-      {openPopup &&<PopUp  user={user}setOpenPopup={setOpenPopup} popupFeedThreads={popupFeedThreads}/>}
+      {openPopup &&<PopUp  setOpenPopup={setOpenPopup} popupFeedThreads={popupFeedThreads}/>}
      <div onClick={()=>setOpenPopup(true)}>
           <WriteIcon/>
      </div>

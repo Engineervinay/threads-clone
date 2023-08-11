@@ -1,6 +1,6 @@
 import PopUpThread from './PopUpThread'
 import ThreadInput from './ThreadInput'
-function PopUp({user,setOpenPopup,popupFeedThreads}) {
+function PopUp({setOpenPopup,popupFeedThreads}) {
   console.log(popupFeedThreads)
   return (
     <div className="popup">
@@ -8,7 +8,7 @@ function PopUp({user,setOpenPopup,popupFeedThreads}) {
      
     {popupFeedThreads?.map(popupFeedThread=>
           
-        <PopUpThread user={user} key={popupFeedThread.id} popupFeedThread={popupFeedThread}/>
+        <PopUpThread  key={popupFeedThread.id} popupFeedThread={popupFeedThread}/>
           
         
     )
