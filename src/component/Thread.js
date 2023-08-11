@@ -1,9 +1,10 @@
 import moment from 'moment'
 
-function Thread({thread,user,setOpenPopup,getThreads}) {
+function Thread({thread,user,setOpenPopup,getThreads,setselectedReplyThread}) {
   const timePassed=moment().startOf('day').fromNow(thread.timestamp)
   const handleClick=()=>{
     setOpenPopup(true)
+    setselectedReplyThread(thread)
   }
   const postLike= async()=>{
     const hasBeenLikedByUser=thread.likes.some(like=>like.user_uuid===user.user_uuid)

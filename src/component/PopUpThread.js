@@ -1,8 +1,8 @@
 
-function PopUpThread() {
+function PopUpThread({user ,popupFeedThread}) {
   return (
     <article className='feed-card'>
-
+      
     </article>
   )
 }
