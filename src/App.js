@@ -92,12 +92,15 @@ function App() {
     getUser();
     getThreads();
   }, []);
-
+  const handleClick=()=>{
+    setPopupFeedThreads(null)
+    setSelectedReplyThread(null)
+    setOpenPopup(true)
+  }
+  
   useEffect(() => {
     getThreadsFeed();
   }, [user, threads, viewThreadsFeed]);
-  console.log("replythread", selectedReplyThread);
-  console.log("popupthread", popupFeedThreads);
   return (
     <>
       {" "}
@@ -128,7 +131,7 @@ function App() {
               postThread={postThread}
             />
           )}
-          <div onClick={() => setOpenPopup(true)}>
+          <div onClick={handleClick}>
             <WriteIcon />
           </div>
         </div>

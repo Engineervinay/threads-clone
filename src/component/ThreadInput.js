@@ -3,7 +3,7 @@ import React from "react";
 function ThreadInput({ postThread, inputText, setInputText }) {
   return (
     <div>
-      <p>vinay</p>
+      <p>Reply</p>
       <input
         type="text"
         value={inputText}

@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "id": 0,
+      "id": 1,
       "user_uuid": "e626d981-4318-4188-a640-09dbd13e3241",
       "username": "vinay patil",
       "handle": "engineervinay",
@@ -25,7 +25,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 2,
       "user_uuid": "d959c54e-2ab7-4e60-9158-210fd81a1381",
       "username": "Don Draper",
       "handle": "Don Draper",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "user_uuid": "9496b51f-7e4f-48a4-8103-c4a662c1e54a",
       "username": "Saul Goodman",
       "handle": "jimmymcgal",
@@ -66,7 +66,7 @@
   ],
   "threads": [
     {
-      "id": 0,
+      "id": 1,
       "timestamp": "Fri Aug 04 2023 14:54:10 GMT+0530 (India Standard Time)",
       "thread_from": "e626d981-4318-4188-a640-09dbd13e3241",
       "thread_to": null,
@@ -85,7 +85,7 @@
       ]
     },
     {
-      "id": 1,
+      "id": 2,
       "timestamp": "Fri Aug 04 2023 15:54:10 GMT+0530 (India Standard Time)",
       "thread_from": "e626d981-4318-4188-a640-09dbd13e3241",
       "thread_to": null,
@@ -98,7 +98,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "timestamp": "Fri Aug 04 2023 17:54:10 GMT+0530 (India Standard Time)",
       "thread_from": "e626d981-4318-4188-a640-09dbd13e3241",
       "thread_to": null,
@@ -107,25 +107,6 @@
       "likes": [
         {
           "user_uuid": "e626d981-4318-4188-a640-09dbd13e3241"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "timestamp": "Fri Aug 04 2023 10:54:10 GMT+0530 (India Standard Time)",
-      "thread_from": "d959c54e-2ab7-4e60-9158-210fd81a1381",
-      "thread_to": null,
-      "reply_to": null,
-      "text": "If you dont like what being said change the conversation.",
-      "likes": [
-        {
-          "user_uuid": "9496b51f-7e4f-48a4-8103-c4a662c1e54a"
-        },
-        {
-          "user_uuid": "e626d981-4318-4188-a640-09dbd13e3241"
-        },
-        {
-          "user_uuid": "d959c54e-2ab7-4e60-9158-210fd81a1381"
         }
       ]
     },
@@ -225,7 +206,11 @@
       "thread_to": "e626d981-4318-4188-a640-09dbd13e3241",
       "reply_to": null,
       "text": "sdkfjkdsjflkjdfghg",
-      "likes": [],
+      "likes": [
+        {
+          "user_uuid": "e626d981-4318-4188-a640-09dbd13e3241"
+        }
+      ],
       "id": 12
     },
     {
@@ -265,22 +250,35 @@
       "id": 16
     },
     {
-      "timestamp": "2023-08-13T07:03:04.749Z",
+      "timestamp": "2023-08-13T07:13:01.847Z",
       "thread_from": "e626d981-4318-4188-a640-09dbd13e3241",
       "thread_to": "e626d981-4318-4188-a640-09dbd13e3241",
-      "reply_to": 8,
-      "text": "this is new reply take this",
-      "likes": [],
+      "reply_to": 3,
+      "text": "this is new comment",
+      "likes": [
+        {
+          "user_uuid": "e626d981-4318-4188-a640-09dbd13e3241"
+        }
+      ],
       "id": 17
     },
     {
-      "timestamp": "2023-08-13T07:04:00.316Z",
+      "timestamp": "2023-08-13T07:15:41.808Z",
       "thread_from": "e626d981-4318-4188-a640-09dbd13e3241",
       "thread_to": "e626d981-4318-4188-a640-09dbd13e3241",
       "reply_to": 1,
-      "text": "does this still work",
+      "text": "reply to thread to check write icon",
       "likes": [],
       "id": 18
+    },
+    {
+      "timestamp": "2023-08-13T07:15:57.118Z",
+      "thread_from": "e626d981-4318-4188-a640-09dbd13e3241",
+      "thread_to": "e626d981-4318-4188-a640-09dbd13e3241",
+      "reply_to": null,
+      "text": "new thread not a reply",
+      "likes": [],
+      "id": 19
     }
   ]
 }
