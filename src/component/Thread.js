@@ -6,6 +6,7 @@ function Thread({
   setOpenPopup,
   getThreads,
   setselectedReplyThread,
+ 
 }) {
   const timePassed = moment().startOf("day").fromNow(thread.timestamp);
   const [replyLength, setReplyLength] = useState(null);
@@ -43,19 +44,22 @@ function Thread({
   };
   const getReplyLength = async () => {
     try {
-      const response = fetch(
+      const response = await fetch(
         `http://localhost:3000/threads?reply_to=${thread.id}`
       );
-      const data = await response.json();
+      const data = await response.json()
+      console.log("dta legnth",data.length)
       setReplyLength(data.length);
+
     } catch (error) {
       console.log(error);
     }
   };
   useEffect(() => {
     getReplyLength();
-    console.log(replyLength);
-  }, [setselectedReplyThread]);
+    
+    console.log("reply length",replyLength);
+  }, [thread]);
   return (
     <article className="feed-card">
       <div className="text-container">

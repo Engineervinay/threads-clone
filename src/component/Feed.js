@@ -5,6 +5,7 @@ function Feed({
   setOpenPopup,
   getThreads,
   setselectedReplyThread,
+  selectedReplyThread
 }) {
   return (
     <div className="feed">
@@ -12,6 +13,7 @@ function Feed({
         return (
           <Thread
             setselectedReplyThread={setselectedReplyThread}
+            selectedReplyThread={selectedReplyThread}
             key={thread.id}
             getThreads={getThreads}
             setOpenPopup={setOpenPopup}

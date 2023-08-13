@@ -112,6 +112,7 @@ function App() {
           {filteredThreads && (
             <Feed
               setselectedReplyThread={setSelectedReplyThread}
+              selectedReplyThread={selectedReplyThread}
               threads={filteredThreads}
               setOpenPopup={setOpenPopup}
               getThreads={getThreads}
