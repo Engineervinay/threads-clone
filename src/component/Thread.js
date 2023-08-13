@@ -8,7 +8,7 @@ function Thread({
   setselectedReplyThread,
  
 }) {
-  const timePassed = moment().startOf("day").fromNow(thread.timestamp);
+  const timePassed = moment(thread.timestamp).fromNow();
   const [replyLength, setReplyLength] = useState(null);
   const handleClick = () => {
     setOpenPopup(true);
@@ -74,7 +74,7 @@ function Thread({
             <p>{thread.text}</p>
           </div>
         </div>
-        <p className="sub-text">{timePassed} ago</p>
+        <p className="sub-text">{timePassed}</p>
       </div>
       <div className="icons">
         <svg

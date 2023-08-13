@@ -53,7 +53,7 @@ function App() {
 
   const postThread = async () => {
     const thread = {
-      timestamp: new Date(),
+      timestamp:  new Date(),
       thread_from: user.user_uuid,
       thread_to: user.user_uuid || null,
       reply_to: selectedReplyThread?.id || null,
@@ -97,7 +97,7 @@ function App() {
     setSelectedReplyThread(null)
     setOpenPopup(true)
   }
-  
+
   useEffect(() => {
     getThreadsFeed();
   }, [user, threads, viewThreadsFeed]);
