@@ -6,7 +6,7 @@ function ThreadInput({postThread ,inputText,setInputText}) {
     <div>
     <p>vinay</p>
     <input type="text" value={inputText} onChange={e=> setInputText(e.target.value)}/>
-    <button className='primary' onClick={()=>postThread}>Post</button>
+    <button className='primary' onClick={postThread}>Post</button>
     </div>
   )
 }
