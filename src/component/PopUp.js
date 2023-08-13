@@ -1,6 +1,6 @@
 import PopUpThread from './PopUpThread'
 import ThreadInput from './ThreadInput'
-function PopUp({setOpenPopup,popupFeedThreads}) {
+function PopUp({postThread,setOpenPopup,popupFeedThreads,inputText,setInputText}) {
   console.log(popupFeedThreads)
   return (
     <div className="popup">
@@ -15,7 +15,11 @@ function PopUp({setOpenPopup,popupFeedThreads}) {
     }
     
       
-      <ThreadInput/>
+      <ThreadInput 
+      inputText={inputText} 
+      setInputText={setInputText}
+      postThread={postThread}
+      />
     </div>
   )
 }

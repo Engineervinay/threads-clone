@@ -1,11 +1,12 @@
 import React from 'react'
 
-function ThreadInput() {
+function ThreadInput({postThread ,inputText,setInputText}) {
+
   return (
     <div>
-    <p></p>
-    <input/>
-    <button className='primary'>Post</button>
+    <p>vinay</p>
+    <input type="text" value={inputText} onChange={e=> setInputText(e.target.value)}/>
+    <button className='primary' onClick={()=>postThread}>Post</button>
     </div>
   )
 }
