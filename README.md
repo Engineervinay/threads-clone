@@ -12,6 +12,8 @@ https://github.com/Engineervinay/threads-clone/assets/29520476/93e01bd9-820c-43a
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Create Issue if you find any changes
+
 ## Available Scripts
 
 In the project directory, you can run:
