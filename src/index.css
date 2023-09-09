@@ -1,160 +1,164 @@
-body{
-    margin:0;
-    padding:0;
-    background-color: black;
-    display:flex;
-    justify-content: center;
-    height:100vh;
-    align-items: center;
-    color: white;
-    font-family: Arial, sans-serif;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  color: white;
+  font-family: Arial, sans-serif;
 }
-.App{
-    position : relative;
-    height: 750px;
-    width:380px;
-    border-radius:40px;
-    background-color:rgb(38,38,38);
-    padding: 20px;
-}
-
-svg{
-    fill:white;
+.App {
+  position: relative;
+  height: 750px;
+  width: 380px;
+  border-radius: 40px;
+  background-color: rgb(38, 38, 38);
+  padding: 20px;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    padding:20px;
-}
-h1, h2, p{
-    margin:4px;
-}
-h1{
-    font-size:24px;
-}
-.sub-text{
-    color:rgb(114,114,114);
-}
-a{
-    text-decoration: none;
-    color:rgb(114,114,114);
-}
-header .info-container{
-    display:flex;
-    justify-content: space-between;
-}
-header .img-container{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    overflow: hidden;
+svg {
+  fill: white;
 }
 
-header .img-container img{
-    height: 110%;
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+h1,
+h2,
+p {
+  margin: 4px;
+}
+h1 {
+  font-size: 24px;
+}
+.sub-text {
+  color: rgb(114, 114, 114);
+}
+a {
+  text-decoration: none;
+  color: rgb(114, 114, 114);
+}
+header .info-container {
+  display: flex;
+  justify-content: space-between;
+}
+header .img-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+header .img-container img {
+  height: 110%;
 }
 header .threads-info {
-    background-color: rgb(59,59,59);
-    color:rgb(114,114,114);
-    padding: 3px 4px;
-    border-radius: 20px;
+  background-color: rgb(59, 59, 59);
+  color: rgb(114, 114, 114);
+  padding: 3px 4px;
+  border-radius: 20px;
 }
-button.primary{
-    border:rgb(114,114,114)solid 1px;
-    background-color: transparent;
-    padding: 7px;
-    margin: 15px 0;
-    border-radius: 7px;
-    color:rgb(250,250,250);
-    font-weight: bold;
-    width:100%;
-}
-
-.button-container button{
-    background-color: transparent;
-    border:none;
-    padding:7px;
-    width:50%;
-    color:rgb(250,250,250);
-    border-bottom:rgb(114,114,114) solid 1px; 
-}
-.button-container button.current{
-    border-bottom:rgb(250,250,250)solid 2px;
-}
-.feed-card .icons svg{
-    height:20px;
-    padding:0 5px;
-}
-.feed-card{
-    border-bottom: rgb(114,114,114)solid 1px;
-    padding:10px 0;
-
-
-}
-.feed-card .text-container{
-    display:flex;
-    justify-content: space-between;
-}
-.feed-card .img-container{
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-.feed-card .img-container img{
-    height: 110%;
-}
-.feed{
-    height:400px;
-
-   overflow-y: scroll;
-    /* imp: overflow x to create scrolling feed*/
-}
-input{
-    background-color: transparent;
-    border:rgb(114,114,114) solid 1px;
-    padding : 10px;
-    width: 100%;
-    margin:10px 0;
-    box-sizing: border-box;
-    border-radius:5px;
-    color:white;   
-}
-    
-input:focus{
-    outline:none;
-}
-.popup{
-    position:absolute;
-    bottom:0;
-    left:0;
-    height: 600px;
-    width:380px;
-    background-color: rgb(38,38,38);
-    padding: 20px;
-    /*overflow-y:scroll;*/
-    box-shadow: rgb(0,0,0,0.25) 0 54px 55px,
-    rgb(0,0,0,0.25) 0 -12px 30px,
-    rgb(0,0,0,0.25) 0 4px 4px,
-    rgb(0,0,0,0.25) 0 12px 13px,
-    rgb(0,0,0,0.25) 0 -3px 5px;
+button.primary {
+  border: rgb(114, 114, 114) solid 1px;
+  background-color: transparent;
+  padding: 7px;
+  margin: 15px 0;
+  border-radius: 7px;
+  color: rgb(250, 250, 250);
+  font-weight: bold;
+  width: 100%;
 }
 
-.write-icon{
-    fill:rgb(250,250,250);
-    cursor: pointer;
-    height:40px;
-    margin-left:45%;
-    margin-top:10px; 
+.button-container button {
+  background-color: transparent;
+  border: none;
+  padding: 7px;
+  width: 50%;
+  color: rgb(250, 250, 250);
+  border-bottom: rgb(114, 114, 114) solid 1px;
 }
-.close-popup{
-    cursor:pointer;
-    width:14px;
-    height: 15px;
-    padding:10px;
-    margin:auto;
-    margin-right:10px;
-    border: rgb(114,114,114) solid 1px;
-    border-radius: 50%;
+.button-container button.current {
+  border-bottom: rgb(250, 250, 250) solid 2px;
+}
+.feed-card .icons svg {
+  height: 20px;
+  padding: 0 5px;
+}
+.feed-card {
+  border-bottom: rgb(114, 114, 114) solid 1px;
+  padding: 10px 0;
+}
+.feed-card .text-container {
+  display: flex;
+  justify-content: space-between;
+}
+.feed-card .img-container {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.feed-card .img-container img {
+  height: 110%;
+}
+.feed {
+  height: 400px;
+
+  overflow-y: scroll;
+  /* imp: overflow x to create scrolling feed*/
+}
+input {
+  background-color: transparent;
+  border: rgb(114, 114, 114) solid 1px;
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: white;
+}
+
+input:focus {
+  outline: none;
+}
+.like-heart {
+  position: relative;
+  width: 38px;
+  height: 28px;
+  margin-right: -8px;
+}
+.popup {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 600px;
+  width: 380px;
+  background-color: rgb(38, 38, 38);
+  padding: 20px;
+  /*overflow-y:scroll;*/
+  box-shadow: rgb(0, 0, 0, 0.25) 0 54px 55px, rgb(0, 0, 0, 0.25) 0 -12px 30px,
+    rgb(0, 0, 0, 0.25) 0 4px 4px, rgb(0, 0, 0, 0.25) 0 12px 13px,
+    rgb(0, 0, 0, 0.25) 0 -3px 5px;
+}
+
+.write-icon {
+  fill: rgb(250, 250, 250);
+  cursor: pointer;
+  height: 40px;
+  margin-left: 45%;
+  margin-top: 10px;
+}
+.close-popup {
+  cursor: pointer;
+  width: 14px;
+  height: 15px;
+  padding: 10px;
+  margin: auto;
+  margin-right: 10px;
+  border: rgb(114, 114, 114) solid 1px;
+  border-radius: 50%;
 }
