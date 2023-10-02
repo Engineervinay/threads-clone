@@ -3,7 +3,6 @@ import Nav from "./component/Nav";
 import Header from "./component/Header";
 import Feed from "./component/Feed";
 import PopUp from "./component/PopUp";
-import "./App.css";
 import WriteIcon from "./component/WriteIcon";
 function App() {
   const [user, setUser] = useState(null);
